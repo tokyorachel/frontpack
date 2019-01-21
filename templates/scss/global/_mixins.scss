@@ -1,0 +1,42 @@
+/*
+ * Buttons
+ * Containers
+ * Layouts
+ */
+
+// Buttons
+@mixin button($solid, $primary, $secondary: $theme-white) {
+  @if ($solid) {
+    background-color: $primary;
+    color: $secondary;
+  }
+
+  @else {
+    background-color: transparent;
+    border: 1px solid $primary;
+    color: $primary;
+  }
+
+  border-radius: 5px;
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 24px;
+  text-decoration: none;
+
+  &:hover {
+    // TODO
+  }
+}
+
+// Containers
+@mixin setContainer() {
+  margin: 0 auto;
+  padding: 0 14px;
+  width: 1140px;
+}
+
+// Layouts
+@mixin flex-row() {
+  display: flex;
+  flex: 0 1 auto;
+}

@@ -1,0 +1,9 @@
+services:
+  frontpack.commands:
+    class: \Drupal\frontpack\Commands\FrontpackCommands
+    tags:
+      - { name: drush.command }
+  frontpack.generator:
+    class: Drupal\frontpack\Generators\FrontpackGenerator
+    tags:
+      -  { name: drush.generator }

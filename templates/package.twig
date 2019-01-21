@@ -1,0 +1,54 @@
+{
+  "name": "{{ name }}",
+  "version": "1.0.0",
+  "description": "A Modern Frontend-focused D8 Theme",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./config/webpack.prod.js",
+    "watch": "webpack --watch --progress --config ./config/webpack.dev.js",
+    {% if utilities == "true" %}
+    "cextidy": "./tidy-export.sh",
+    {% endif %}
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Frontpack starter by tokyorachel",
+  "private": true,
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "eslint": "^5.12.0",
+    "eslint-loader": "^2.1.1",
+    {% if use_react == "true" %}
+      {# TODO: add eslint configs for React #}
+      {# TODO: add React packages #}
+      {#
+      "eslint-config-airbnb": "",
+      "eslint-plugin-jsx-a11y": "",
+      #}
+    {% else %}
+    "eslint-config-airbnb-base": "^13.1.0",
+    {% endif %}
+    "eslint-plugin-import": "^2.14.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "stylelint": "^9.10.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.5.1",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
+}

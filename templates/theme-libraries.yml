@@ -1,0 +1,8 @@
+# Main theme library.
+global:
+  js:
+    build/js/theme.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.debounce

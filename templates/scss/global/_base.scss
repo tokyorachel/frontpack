@@ -1,0 +1,8 @@
+@import "../../node_modules/normalize-scss/sass/normalize";
+
+@include normalize();
+
+.layout-container {
+  font-size: $regular-font;
+  font-family: $font-stack;
+}

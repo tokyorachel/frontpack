@@ -1,0 +1,29 @@
+// Font family
+$font-stack: Verdana, Roboto, "Droid Sans", "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+
+//Font sizes
+$xxlarge-font: 30px;
+$xlarge-font: 26px;
+$large-font: 20px;
+$regular-font: 16px;
+$small-font: 14px;
+$xsmall-font: 12px;
+$xxsmall-font: 10px;
+
+// Colors
+// Human readable names from http://chir.ag/projects/name-that-color/.
+$theme-white: #fff; //white
+$theme-black: #131313; //cod gray
+
+$theme-accent-primary: $theme-black //
+$theme-accent-primary-contrast: $theme-white; //
+$theme-accent-dark: $theme-black; //
+$theme-accent-dark-contrast: $theme-white; //
+$theme-accent-light: $theme-black; //
+$theme-accent-light-contrast: $theme-white; //
+
+$theme-accent-1: $theme-black; //
+$theme-accent-2: $theme-black; //
+$theme-accent-3: $theme-black; //
+$theme-accent-4: $theme-black; //
+$theme-accent-5: $theme-black; //

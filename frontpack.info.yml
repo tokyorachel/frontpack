@@ -1,0 +1,4 @@
+name: Frontpack
+type: module
+description: Module to create custom theme with modern front-end tooling.
+core: '8.x'
