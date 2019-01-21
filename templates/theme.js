@@ -3,15 +3,16 @@
 * File contains JS for Theme.
 */
 
+/* eslint-disable wrap-iife, func-names, no-param-reassign */
+
 (function () {
   // Custom javascript
-  console.warn('theme.js initialized. Start theming!');
+  console.log('theme.js initialized. Start theming!');
 })();
 
-/* eslint-disable wrap-iife, func-names, no-param-reassign */
 (function (Drupal, debounce) {
   Drupal.behaviors.viewport = {
-    attach: (context, settings) => {
+    attach: () => { // 'context' and 'settings' parameters are available
       let windowWidth = 0;
 
       /* Debounce listener for viewport changes */

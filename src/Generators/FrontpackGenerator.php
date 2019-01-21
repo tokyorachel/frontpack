@@ -102,6 +102,10 @@ class FrontpackGenerator extends BaseGenerator {
     $this->addDirectory()
       ->path($location . '{machine_name}/build/');
 
+    $this->addFile()
+      ->path($location . '{machine_name}/.gitignore')
+      ->template('./.gitignore');
+
     // Node and nvm install script.
     $this->addFile()
       ->path($location . '{machine_name}/install-node.sh')

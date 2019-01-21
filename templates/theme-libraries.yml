@@ -1,8 +1,11 @@
 # Main theme library.
 global:
   js:
-    build/js/theme.js: {}
+    build/main.bundle.js: {}
   dependencies:
     - core/drupal
     - core/drupalSettings
     - core/drupal.debounce
+  css:
+    theme:
+      build/main.css: {}
