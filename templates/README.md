@@ -100,7 +100,25 @@ scss/
 
 ## Webpack 
 
-This covers Sass compiling, JS transpiling with Babel, JS and SASS linting, and it watches front end files for updates when `npm run watch` is running.
+Webpack handles JS transpiling with [Babel](https://babeljs.io), Sass compiling, [Autoprefixing](https://github.com/postcss/autoprefixer) css with [PostCSS](https://github.com/postcss/postcss), [JS linting](https://eslint.org/), [SASS linting](https://stylelint.io/), uglification and optimization of production files, and for use in development watching front end files for updates when `npm run watch` is running.
+
+Configuration files for webpack and postcss can be found in the config folder:
+
+```
+config/
+  |-- postcss.config.js
+  |-- webpack.common.js
+  |-- webpack.dev.js
+  |-- webpack.prod.js
+```
+
+Other relevant run command files are located in the theme root directory:
+
+```
+.babelrc
+.eslintrc
+.stylelintrc
+```
 
 
 ## JavaScript

@@ -130,6 +130,10 @@ class FrontpackGenerator extends BaseGenerator {
       ->template('./config/webpack.prod.js');
 
     $this->addFile()
+      ->path($location . '{machine_name}/config/postcss.config.js')
+      ->template('./config/postcss.config.js');
+
+    $this->addFile()
       ->path($location . '{machine_name}/.babelrc')
       ->template('./.babelrc');
 
