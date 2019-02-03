@@ -102,6 +102,10 @@ class FrontpackGenerator extends BaseGenerator {
     $this->addDirectory()
       ->path($location . '{machine_name}/build/');
 
+    $this->addFile()
+      ->path($location . '{machine_name}/.gitignore')
+      ->template('./.gitignore');
+
     // Node and nvm install script.
     $this->addFile()
       ->path($location . '{machine_name}/install-node.sh')
@@ -124,6 +128,10 @@ class FrontpackGenerator extends BaseGenerator {
     $this->addFile()
       ->path($location . '{machine_name}/config/webpack.prod.js')
       ->template('./config/webpack.prod.js');
+
+    $this->addFile()
+      ->path($location . '{machine_name}/config/postcss.config.js')
+      ->template('./config/postcss.config.js');
 
     $this->addFile()
       ->path($location . '{machine_name}/.babelrc')
